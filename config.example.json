@@ -1,0 +1,28 @@
+{
+  "price": 4.0, // This is 4 SOL, change to whatever you need.
+  "number": 10, // Number of items in the collection 
+  "gatekeeper": null,
+  "creators": [
+    {
+      "address": "REDACTED-USE-YOUR-SOL-ACCOUNT",
+      "share": 100 // This sends 100% of the sales to 1 wallet address
+    }
+  ],
+  "solTreasuryAccount": "REDACTED-USE-YOUR-SOL-ACCOUNT",
+  "splTokenAccount": null,
+  "splToken": null,
+  "goLiveDate": "2023-04-03T19:44:41.561808+00:00", // just type 'now' when asked your go-live date
+  "endSettings": null,
+  "whitelistMintSettings": null,
+  "hiddenSettings": null,
+  "freezeTime": null,
+  "uploadMethod": "bundlr", // bundlr is free!
+  "retainAuthority": true,
+  "isMutable": false,
+  "symbol": "HACKS",
+  "sellerFeeBasisPoints": 10, // This provides 1% royalties 
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null,
+  "pinataConfig": null
+}
