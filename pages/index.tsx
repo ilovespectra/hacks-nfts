@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       </Head>
       <Box
         w="full"
-        h="100vh"
+        h="130vh"
         bgImage={connected ? "" : `url(${'/images/home-background.png'})`}
         backgroundSize="cover"
         backgroundPosition="center"
