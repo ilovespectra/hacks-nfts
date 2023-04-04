@@ -44,12 +44,14 @@ const Disconnected: FC = () => {
             textAlign="center"
           >
           <Box
-          bgColor="rgba(0, 0, 0, 0.6)"
-          borderRadius="20px"
-          p={8}
-          w="100%"
-          maxW="800px"
-          mt={{ base: "30%", md: "10%" }}
+            bgColor="rgba(0, 0, 0, 0.6)"
+            borderRadius="20px"
+            p={8}
+            w="100%"
+            maxW="800px"
+            mt={{ base: "30%", md: "10%" }}
+            textAlign="center" // added textAlign property
+            fontSize={{ base: "2xl", md: "4xl" }}
         >
             Mint HACKs.<br />
             Learn skills.<br />
