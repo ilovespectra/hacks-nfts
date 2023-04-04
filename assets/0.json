@@ -1,0 +1,28 @@
+{
+    "name": "LT - Hacks NFT",
+    "symbol": "HACKS",
+    "description": "This NFT represents the purchase of a Dragino LT-22222-L and an in-person onboarding hacks course with HeliumDenver.",
+    "image": "0.png",
+    "attributes": [
+        {
+            "trait_type": "Hacks Session",
+            "value": "1"
+        },
+        {
+            "trait_type": "Sensor Type",
+            "value": "Dragino LT-22222-L"
+        },
+        {
+            "trait_type": "Image",
+            "value": "Hacks Stacks"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ]
+    }
+}

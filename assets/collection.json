@@ -1,0 +1,15 @@
+{
+    "name": "HACKs by HeliumDenver",
+    "symbol": "HACKS",
+    "description": "NFTs in this collection represent the purchase of a sensor, all the required hardware, and an in-person onboarding hacks course with HeliumDenver.",
+    "image": "collection.png",
+    "attributes": [],
+    "properties": {
+      "files": [
+        {
+          "uri": "collection.png",
+          "type": "image/png"
+        }
+      ]
+    }
+  }
