@@ -52,10 +52,15 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
   const router = useRouter();
 
   return (
-    <MainLayout>
-      <VStack spacing={16} width="100%" height="100%">
-        <Container width="80%" maxW="80%" height="800%" p={0} overflowY="auto" borderRadius="xl">
-          <VStack spacing={6} width="100%" maxW="100%" height="100%" p={0} bg="black">
+  <>
+    <Container h="100vh"
+    bgImage={`url(${'/images/background.png'})`}
+    backgroundSize="cover"
+    backgroundPosition="center"
+    className="blur-background"><Box>
+      <VStack spacing={5} width="100%" height="100%">
+        <Container width="80%" maxW="80%" height="100%" p={0} overflowY="auto" borderRadius="50px" mt="1">
+          <VStack spacing={0} width="100%" maxW="100%" height="90%" p={0} bg="black">
             <Button colorScheme="white" color="black" variant="ghost" onClick={() => router.push('/connect')}>
               Connect Wallet
             </Button>
@@ -64,7 +69,7 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
             </Heading>
             
             <Text color="bodyText" fontSize="l" textAlign="center">
-              Congratulations, you secured a Dragino LT-22222-L sensor and a spot in the in-person onboarding course by HeliumDenver!<br></br> Join us over in The Official HeliumLava Community Discord to confirm your course time/place!: 
+              Congratulations, you secured a Dragino LT-22222-L sensor and a spot in the in-person onboarding course by HeliumDenver! Join us over in The Official HeliumLava Community Discord to confirm your course time/place!: <br /><br />
               <a href="https://discord.gg/9PZpqtRPPb" target="_blank" rel="noreferrer" className="link"> Click Here!</a>
                <br></br>
             </Text><br></br>
@@ -79,11 +84,12 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
           display="flex"
           justifyContent="center"
         >
-          <Image src={metadata?.image ?? ""} alt="" maxW="80%" maxH="80%" objectFit="contain" />
+          <Image src={metadata?.image ?? ""} alt="" maxW="100%" maxH="100%" objectFit="contain" />
         </Box>
   
       </VStack>
-    </MainLayout>
+      </Box></Container>
+    </>
   )
   
 }
