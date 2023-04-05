@@ -54,7 +54,7 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
   return (
     <MainLayout>
       <VStack spacing={16} width="100%" height="100%">
-        <Container width="80%" maxW="80%" height="800%" p={0} overflowY="auto">
+        <Container width="80%" maxW="80%" height="800%" p={0} overflowY="auto" borderRadius="xl">
           <VStack spacing={6} width="100%" maxW="100%" height="100%" p={0} bg="black">
             <Button colorScheme="white" color="black" variant="ghost" onClick={() => router.push('/connect')}>
               Connect Wallet
