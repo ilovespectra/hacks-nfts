@@ -78,60 +78,51 @@ const Connected: FC = () => {
     },
     [walletAdapter.connected, candyMachine, metaplex, router]
   )
+
   return (
     <>
-    <Container>
-    <Box
-      backgroundImage="url('/images/background.jpg')"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
-    >
-      <VStack spacing={5} alignItems="center" px={10} py={12}>
-        <Box
-          bgColor="rgba(0, 0, 0, 0.6)"
-          borderRadius="20px"
-          p={8}
-          w="100%"
-          maxW="800px"
-          mt={{ base: "30%", md: "10%" }}
-        >
-          <Container>
-            <VStack spacing={5}>
-              <Heading
-                color="white"
-                as="h2"
-                size="2xl"
-                noOfLines={1}
-                textAlign="center"
-              >
-                Welcome Hacker!
-              </Heading>
-              <Text color="white" fontSize="l" textAlign="center">
-                Each HACKs NFT represents a sensor purchase and in-person onboarding hacks session!
-                This NFT represents the Dragino LT-22222-L, a Helium powered relay sensor.<br></br>
-                <b>Price:</b> 4 SOL
-              </Text>
-            </VStack>
-          </Container>
-        </Box>
+    <Container height="100vh" overflow="hidden">
+      <Box
+        bgColor="rgba(0, 0, 0, 0.6)"
+        borderRadius="20px"
+        p={8}
+        w="100%"
+        maxW="800px"
+        mt={{ base: "10%", md: "5%" }}
+      >
+        <VStack spacing={2} alignItems="center" px={5} py={5}>
+          <Heading
+            color="white"
+            as="h2"
+            size="2xl"
+            noOfLines={1}
+            textAlign="center"
+          >
+            Welcome Hacker!
+          </Heading>
+          <Text color="white" fontSize="l" textAlign="center">
+            Each HACKs NFT represents a sensor purchase and in-person onboarding hacks session!
+            This NFT represents the Dragino LT-22222-L, a Helium powered relay sensor.<br></br>
+            <b>Price:</b> 4 SOL
+          </Text>
 
-        <HStack spacing={10}>
-          <Image src="../images/avatar1.png" alt="" maxW="300px"/>
-        </HStack>
-
-        <Button
-          bgColor="accent"
-          color="white"
-          maxW="420px"
-          isLoading={isMinting}
-          onClick={handleClick}
-        >
-          <Text>Mint a Hacks NFT</Text>
-        </Button>
-      </VStack>
-      </Box></Container></>
-  );
-};
+          <HStack spacing={5}>
+            <Image src="../images/avatar1.png" alt="" maxW="300px"/>
+          </HStack>
+          <Text><i>LT - Hacks NFT</i></Text><br />
+          <Button
+            bgColor="accent"
+            color="white"
+            maxW="420px"
+            isLoading={isMinting}
+            onClick={handleClick}
+          >
+            <Text>Mint "LT"</Text>
+          </Button>
+        </VStack>
+        </Box></Container></>
+    );
+  };
 
 export default Connected
   
