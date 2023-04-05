@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       <Box
         w="full"
         h="130vh"
-        bgImage={connected ? "" : `url(${'/images/home-background.png'})`}
+        bgImage={`url(${'/images/home-background.png'})`}
         backgroundSize="cover"
         backgroundPosition="center"
         className="blur-background"
@@ -46,7 +46,13 @@ const Home: NextPage = () => {
 
           <Spacer />
           <Center>
-            { connected ? <Connected/> : <Disconnected /> }
+            { connected ? <Box
+                            backgroundImage="url('/images/background.jpg')"
+                            backgroundRepeat="no-repeat"
+                            backgroundSize="cover"
+                          >
+                        <Connected />
+                      </Box> : <Disconnected /> }
           </Center>
           <Spacer />
           {showHelp && (
@@ -56,7 +62,7 @@ const Home: NextPage = () => {
         <ModalContent bg="rgba(0, 0, 0, 0.5)">
           <ModalBody textAlign="center">
             <Heading size="lg" mb={4} color="white">Safety First!</Heading>
-            <Text color="white">When installing a wallet extension, such as Phantom, Solflare, Torus, Coinbase, etc., you will be prompted to create a wallet or import one with a seed phrase. Consider setting up your wallet in a new browser window to isolate your extension, which can enhance user confidence. The wallet pop-up window is your private interface with the associated blockchain, and entering your seed phrase grants access to approve transactions. Be vigilant when handling transactions and double-check addresses to avoid man-in-the-middle attacks that may authorize third-party transactions from your wallet.
+            <Text color="white">On mobile devices, clicking the Phantom link takes you to download the app. Open this webpage from your Phantom browser to connect your wallet. When installing a wallet extension on desktop, such as Phantom, Solflare, Torus, Coinbase, etc., you will be prompted to create a wallet or import one with a seed phrase. <b>Consider setting up your wallet in a new browser window to isolate your extension, which can enhance user confidence.</b><br></br><br></br> The wallet pop-up window is your private interface with the associated blockchain, and entering your seed phrase grants access to approve transactions. Be vigilant when handling transactions and double-check addresses to avoid man-in-the-middle attacks that may authorize third-party transactions from your wallet.
             <br></br><br></br><i>HeliumDenver is not directly affiliated with Nova or Helium Foundation, but rather represents a meat-space community dedicated to the growth of developers within the Helium and Solana ecosystems. You were probably sent this link directly by Tanner, Founder of HeliumDenver. You will be delivered your sensor in person at the time of your course. Find us in the Discord for any questions!</i></Text><br></br>
             <Button onClick={() => setShowHelp(false)}>Close</Button>
           </ModalBody>
