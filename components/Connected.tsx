@@ -42,7 +42,7 @@ const Connected: FC = () => {
     metaplex
       .candyMachinesV2()
       .findByAddress({
-        address: new PublicKey("FoDNuEKcA2Jbc6GSvD5AhkaxN9psm8fTGicJkLcrxBth"),
+        address: new PublicKey("yTY4bZHfdGjAQVVFaCHozaRmHkpDhWTFnjefeHCY7kq"),
       })
       .then((candyMachine) => {
         console.log(candyMachine)
@@ -79,6 +79,13 @@ const Connected: FC = () => {
     [walletAdapter.connected, candyMachine, metaplex, router]
   )
   return (
+    <>
+    <Container>
+    <Box
+      backgroundImage="url('/images/background.jpg')"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+    >
       <VStack spacing={5} alignItems="center" px={10} py={12}>
         <Box
           bgColor="rgba(0, 0, 0, 0.6)"
@@ -109,9 +116,9 @@ const Connected: FC = () => {
         </Box>
 
         <HStack spacing={10}>
-          <Image src="../images/avatar1.png" alt="" />
+          <Image src="../images/avatar1.png" alt="" maxW="300px"/>
         </HStack>
-  
+
         <Button
           bgColor="accent"
           color="white"
@@ -122,7 +129,9 @@ const Connected: FC = () => {
           <Text>Mint a Hacks NFT</Text>
         </Button>
       </VStack>
-  )
-}  
+      </Box></Container></>
+  );
+};
+
 export default Connected
   
