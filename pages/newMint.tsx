@@ -79,7 +79,7 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
           display="flex"
           justifyContent="center"
         >
-          <Image src={metadata?.image ?? ""} alt="" maxW="65%" maxH="65%" objectFit="contain" />
+          <Image src={metadata?.image ?? ""} alt="" maxW="80%" maxH="80%" objectFit="contain" />
         </Box>
   
       </VStack>
