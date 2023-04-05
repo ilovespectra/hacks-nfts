@@ -1,4 +1,6 @@
-# NFT minting UI for HeliumDenver HACKs NFTs.
+# Solana NFT Tutorial
+
+### NFT minting UI for HeliumDenver HACKs NFTs.
 To deploy your own version of this webpage, you'll need your own candymachine over which you retain the mint authority. Follow these steps to create your own NFT collection on Solana. 
 
 ## Installing the Solana tool suite
