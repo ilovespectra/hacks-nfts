@@ -60,14 +60,14 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
               Connect Wallet
             </Button>
             <Heading color="white" as="h1" size="xl" textAlign="center">
-              It&apos;s time to get serious.
+              Let's Hacking Go!
             </Heading>
             
             <Text color="bodyText" fontSize="l" textAlign="center">
-              Congratulations, you secured a Dragino LT-22222-L sensor and a spot in the in-person onboarding course by HeliumDenver!<br></br> Join us over in 
-              <a href="https://discord.gg/9PZpqtRPPb" target="_blank" rel="noreferrer" className="link"> The Official HeliumLava Community Discord </a>
-               to confirm your course time/place!
-            </Text>
+              Congratulations, you secured a Dragino LT-22222-L sensor and a spot in the in-person onboarding course by HeliumDenver!<br></br> Join us over in The Official HeliumLava Community Discord to confirm your course time/place!: 
+              <a href="https://discord.gg/9PZpqtRPPb" target="_blank" rel="noreferrer" className="link"> Click Here!</a>
+               <br></br>
+            </Text><br></br>
   
           </VStack>
         </Container>
