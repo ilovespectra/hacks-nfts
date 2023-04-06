@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Hacks NFTs</title>
-        <meta name="This NFT represents a sensor and in-person onboarding class" />
+        <meta name="HACKs NFTs by HeliumDenve" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box
