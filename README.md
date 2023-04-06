@@ -118,6 +118,14 @@ Check out our Candy Machine config docs to learn about the options:
 You can also create the configuration file by creating a file named `config.json` in your projects root directory. <a href="https://github.com/ilovespectra/heliumdenver/blob/main/config.example.json" target="_blank">Here</a> is an example.
 
 ## Sugar Upload!
+
+This is your last chance to make sure your images are looking peachy keen, if you're looking at less than 1080px, you can really tell. I made this <a href="https://ilovespectra.github.io/ai-sharpen.html" target="_blank">4K-Image-Enhancer</a> for converting images to 4k, totally free, no gimicks. 
+<br><br>
+<i>Example</i>
+<p align="center">
+<img src="images/demo1.png" width="500">
+  </p>
+
 Next run this command in your terminal:
 ```
 sugar upload
