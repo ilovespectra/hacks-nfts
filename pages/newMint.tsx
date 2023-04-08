@@ -59,7 +59,7 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
   backgroundSize="cover"
   backgroundPosition="center"
   className="blur-background">
-   <Box><Box>
+   <Box>
       <VStack spacing={5} width="100%" height="100%">
         <Container width="80%" maxW="80%" height="100%" p={0} overflowY="auto" borderRadius="50px" mt="1">
           <VStack spacing={0} width="100%" maxW="100%" height="90%" p={0} bg="black">
