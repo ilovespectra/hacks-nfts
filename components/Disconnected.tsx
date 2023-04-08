@@ -35,29 +35,33 @@ const Disconnected: FC = () => {
   return (
     <>
       <Container>
-        <VStack spacing={20}>
+        <VStack spacing={10}>
           <Heading
             color="white"
             as="h1"
             size="4xl"
-            noOfLines={3}
+            noOfLines={4}
             textAlign="center"
           >
           <Box
           bgColor="rgba(0, 0, 0, 0.6)"
           borderRadius="20px"
-          p={8}
+          p={5}
           w="100%"
           maxW="800px"
           mt={{ base: "30%", md: "10%" }}
           textAlign="center" // added textAlign property
           fontSize={{ base: "2xl", md: "4xl" }}
         >
-            Mint HACKs.<br />
-            Learn skills.<br />
-            Level up.
+            Feeling<br />
+            Philanthropic?
+
+            <Box textAlign="center" // added textAlign property
+          fontSize={{ base: "sm", md: "l" }}><br />HeliumDenver - LavaDAO</Box>
+            
             </Box>
           </Heading>
+          
           <Button
             bgColor="blue"
             color="white"
@@ -65,7 +69,7 @@ const Disconnected: FC = () => {
             onClick={handleClick}
           >
             <HStack>
-              <Text>Become a Hacker</Text>
+              <Text>Join LavaDAO</Text>
               <ArrowForwardIcon />
             </HStack>
           </Button>

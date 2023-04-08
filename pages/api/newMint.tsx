@@ -52,14 +52,13 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
   const router = useRouter();
 
   return (
-  <>
-    <Box w="full"
+  <><Box w="full"
   h="160vh"
   bgImage={`url(${'/images/home-background.png'})`}
   backgroundSize="cover"
   backgroundPosition="center"
   className="blur-background">
-   <Box>
+    <Box>
       <VStack spacing={5} width="100%" height="100%">
         <Container width="80%" maxW="80%" height="100%" p={0} overflowY="auto" borderRadius="50px" mt="1">
           <VStack spacing={0} width="100%" maxW="100%" height="90%" p={0} bg="black">
@@ -67,11 +66,11 @@ const NewMint: NextPage<NewMintProps> = ({ mint }) => {
               Connect Wallet
             </Button>
             <Heading color="white" as="h1" size="xl" textAlign="center">
-              Let's Hacking Go!
+              Thanks so much!
             </Heading>
             
             <Text color="bodyText" fontSize="l" textAlign="center">
-              Congratulations, you secured a Dragino LT-22222-L sensor and a spot in the in-person onboarding course by HeliumDenver! Join us over in The Official HeliumLava Community Discord to confirm your course time/place!: <br /><br />
+              Congratulations, you just joined LavaDAO by providing a massive boost to help us make our dreams a reality. Go ahead and join us in the Discord to see what we can build together!<br /><br />
               <a href="https://discord.gg/9PZpqtRPPb" target="_blank" rel="noreferrer" className="link"> Click Here!</a>
                <br></br>
             </Text><br></br>

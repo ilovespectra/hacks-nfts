@@ -11,8 +11,8 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>HeliumDenver Presents the Hacks NFT Collection</title>
-        <meta name="The NFT Collection for HeliumDenver Hacks sessions" />
+        <title>LavaDAO Presents the HeliumDenver Philanthropy Token</title>
+        <meta name="The NFT Collection for philanthropists within the Helium ecosystem." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -38,7 +38,7 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Hacks for the masses. 
+                Big things are rising. 
               </a>
             </Box>
           </Center>
