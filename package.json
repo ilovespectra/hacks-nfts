@@ -35,5 +35,18 @@
   },
   "devDependencies": {
     "ts-node": "^10.9.1"
-  }
+  },
+  "description": "<a href=\"https://hacks-nfts.vercel.app/\" target=\"_blank\">Click here to test on devnet.</a><br />(Cost: 4 devnet SOL)<br /><br /> Swap your wallet to `devnet` within the settings of your wallet app or eztenstion.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilovespectra/heliumdenver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilovespectra/heliumdenver/issues"
+  },
+  "homepage": "https://github.com/ilovespectra/heliumdenver#readme"
 }
