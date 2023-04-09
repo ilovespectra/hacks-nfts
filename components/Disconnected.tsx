@@ -1,11 +1,58 @@
- return (
+import { FC, MouseEventHandler, useCallback } from "react"
+import {
+  Button,
+  Container,
+  Heading,
+  HStack,
+  Text,
+  VStack,
+  Box,
+} from "@chakra-ui/react"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
+import { useWalletModal } from "@solana/wallet-adapter-react-ui"
+import { useWallet } from "@solana/wallet-adapter-react"
+
+
+const Disconnected: FC = () => {
+  const modalState = useWalletModal()
+  const { wallet, connect } = useWallet()
+
+  const handleClick: MouseEventHandler<HTMLButtonElement> = useCallback(
+    (event) => {
+      if (event.defaultPrevented) {
+        return
+      }
+
+      if (!wallet) {
+        modalState.setVisible(true)
+      } else {
+        connect().catch(() => {})
+      }
+    },
+    [wallet, connect, modalState]
+  )
+
+  return (
     <>
       <Container>
+      <div style={{
+  backgroundImage: "url('/images/hacks.png')",
+  width: "100%",
+  height: "100%",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center center",
+  border: "none",
+  margin: 0,
+  padding: 0,
+}}>
+  <img src="/images/hacks.png" alt="hacks" />
+</div>
         <VStack spacing={20}>
           <Heading
             color="white"
             as="h1"
-            size="4xl"
+            size="xl"
             noOfLines={3}
             textAlign="center"
           >
@@ -16,8 +63,6 @@
           w="100%"
           maxW="800px"
           mt={{ base: "30%", md: "10%" }}
-          textAlign="center" // added textAlign property
-          fontSize={{ base: "2xl", md: "4xl" }}
         >
             Mint HACKs.<br />
             Learn skills.<br />
@@ -40,4 +85,5 @@
     </>
   )
 }
+
 export default Disconnected
