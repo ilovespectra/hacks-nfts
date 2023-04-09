@@ -14,7 +14,7 @@ import { useMemo } from "react"
 require("@solana/wallet-adapter-react-ui/styles.css")
 
 const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
-  const url = useMemo(() => clusterApiUrl("mainnet-beta"), [])
+  const url = useMemo(() => clusterApiUrl("devnet"), [])
   const phantom = new PhantomWalletAdapter()
   const solflare = new SolflareWalletAdapter()
   const torus = new TorusWalletAdapter()
