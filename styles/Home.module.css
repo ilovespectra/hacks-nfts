@@ -155,6 +155,9 @@
 .wallet-adapter-button-trigger {
   background-color: #003d88;
   background-size: cover;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .link {
