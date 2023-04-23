@@ -1,4 +1,8 @@
-# HACKS NFT MINT UI
+# BUSTED
+
+Had a weird issue and botched most of these pages with a push from the terminal. Totally broken til further notice, my bad! 
+
+#HACKS NFT MINT UI
 <a href="https://hacks-nfts.vercel.app/" target="_blank">Click here to test on devnet.</a><br />(Cost: 4 devnet SOL)<br /><br />
 Swap your wallet to `devnet` within the settings of your wallet app or eztenstion. 
 
