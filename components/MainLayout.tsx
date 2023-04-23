@@ -14,11 +14,29 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-	@@ -38,7 +38,7 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
+	    <Box
+        w="full"
+        h="calc(100vh)"
+        bgImage={connected ? "" : "url(/background.svg)"}
+        backgroundPosition="center"
+      >
+        <Stack w="full" h="calc(100vh)" justify="center">
+          <NavBar />
+
+          <Spacer />
+
+          <Center>{children}</Center>
+
+          <Spacer />
+
+          <Center>
+            <Box marginBottom={4} color="white">
+              <a
+                href="https://twitter.com/heliumdenver"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Hacks for the masses. 
+                Hacks for the Masses
               </a>
             </Box>
           </Center>
